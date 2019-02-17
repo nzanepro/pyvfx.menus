@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyvfx.menus",
-    version="0.0.1",
+    version="0.0.2",
     author="Zachary Cole",
     author_email="zcole@nzaneproductions.com",
     description="A package to find & import menu.py files -"
@@ -13,7 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/nzanepro/pyvfx.menus",
-    py_modules=["init", "userSetup"],
+    py_modules=["menu", "userSetup"],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 2.7",

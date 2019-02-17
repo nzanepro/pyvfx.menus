@@ -29,7 +29,7 @@ def findMenus(pth):
     results = []
     for dirName, subdirList, fileList in os.walk(pth):
         for fname in fileList:
-            if fname == "menu.py":
+            if fname == "menu.py" and dirName != pth:
                 fullname = os.path.join(dirName, fname)
                 for f, r in [(pth, ""), (".py", ""), (os.path.sep, ".")]:
                     fullname = fullname.replace(f, r)
